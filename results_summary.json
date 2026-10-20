@@ -1,0 +1,49 @@
+{
+  "version": "v12",
+  "private_leaderboard_score": 65.904,
+  "private_score_source": "Competition leaderboard result",
+  "local_validation": {
+    "rmse_m": 0.40768180875292853,
+    "score": 71.03878119202977
+  },
+  "validation_protocol": {
+    "folds": 25,
+    "seeds": [
+      2026,
+      731,
+      1907
+    ],
+    "group": "mission_id",
+    "aggregation": "Mean of out-of-fold predictions across seeds, then compute metric"
+  },
+  "v11_matched_local": {
+    "rmse_m": 0.4081636568165572,
+    "score": 71.01447300952967
+  },
+  "per_seed_local": {
+    "2026": {
+      "rmse_m": 0.4078456521207722,
+      "score": 71.03051378491702
+    },
+    "731": {
+      "rmse_m": 0.4082966695752418,
+      "score": 71.00776573600868
+    },
+    "1907": {
+      "rmse_m": 0.4072919492509583,
+      "score": 71.05846093500766
+    }
+  },
+  "weights": {
+    "adaptive": 0.1875,
+    "baseline": 0.09375,
+    "colored": 0.046875,
+    "linear": 0.046875,
+    "mixture": 0.0,
+    "environment_stationary": 0.625,
+    "gaussian_new": 0.0
+  },
+  "score_definition": "100 / (1 + RMSE_m)",
+  "private_rmse_implied_by_displayed_score": 0.517358582180141,
+  "limitations": "Local validation informed model selection. The displayed private score is rounded and measures a different evaluation partition."
+}

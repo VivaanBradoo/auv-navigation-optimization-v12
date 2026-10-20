@@ -1,0 +1,23 @@
+# Competition data, predictions, fitted parameters and derived caches
+*.csv
+*.parquet
+*.pkl
+*.npy
+*.npz
+*_manifest.json
+*_parameters.json
+*_results.json
+*_predictions.json
+v9_reference_parameters.json
+final_audit*.json
+blend_weights.json
+*.log
+*_log.txt
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
